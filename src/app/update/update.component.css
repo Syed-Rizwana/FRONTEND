@@ -1,0 +1,83 @@
+/* Apply background image to the entire page */
+.b {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://thumbs.dreamstime.com/b/successful-group-international-women-standing-line-successful-group-international-women-standing-line-outdoors-111054571.jpg?w=1200");
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Adjust the form container */
+.form-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto; /* Adjust top margin to create space between form and background */
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* Add overflow to hide any content that exceeds the container height */
+  position: relative; /* Add relative positioning to allow z-index to work */
+  z-index: 1; /* Adjust z-index to make sure form container is above the background */
+}
+
+/* Adjust form labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #007bff;
+}
+
+/* Adjust form inputs and textarea */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Adjust buttons */
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.btn.btn-primary {
+  background-color: #dc3545; /* Red color for the Delete button */
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Adjust the message container */
+
+.red{
+  color: #dc3545;
+}

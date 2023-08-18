@@ -1,0 +1,67 @@
+<!-- <div class="container mt-5">
+    <div class="card p-4 text-white feedback">
+      <h3 class="text-center" style="color:black">Feedback Form</h3>
+      <p class="text-center" style="color:black">If you have a suggestion or any feedback for us, we'd love to hear it</p>
+      <div class="alert alert-success" *ngIf="msg">
+        {{ msg }}
+      </div>
+      <form [formGroup]="feedbackForm" (ngSubmit)="sendFeedback()" novalidate>
+        <div class="form-group" [ngClass]="{ 'has-error': submitted && feedbackForm.controls['name'].errors }">
+          <label for="name">Name</label>
+          <input type="text" [(ngModel)]="User.name" class="form-control" formControlName="name" placeholder="Write your name" required />
+          <div *ngIf="submitted && feedbackForm.controls['name'].errors" class="help-block">
+            <div *ngIf="feedbackForm.controls['name'].errors['required']" style="color:red">Name is required.</div>
+          </div>
+        </div>
+        <div class="form-group" [ngClass]="{ 'has-error': submitted && feedbackForm.controls['email'].errors }">
+          <label for="email">Email</label>
+          <input type="email"[(ngModel)]="User.email" class="form-control" formControlName="email" placeholder="Write your email" required />
+          <div *ngIf="submitted && feedbackForm.controls['email'].errors" class="help-block">
+            <div *ngIf="feedbackForm.controls['email'].errors['required']" style="color:red">Email is required.</div>
+            <div *ngIf="feedbackForm.controls['email'].errors['email']" style="color:red">Invalid email format.</div>
+          </div>
+        </div>
+        <div class="form-group" [ngClass]="{ 'has-error': submitted && feedbackForm.controls['category'].errors }">
+          <label for="category">Which service area do you have feedback for?</label>
+          <select class="form-control" name="category" formControlName="category" required>
+            <option *ngFor="let choice of category;" [value]="choice.id">{{ choice.value }}</option>
+          </select>
+          <div *ngIf="submitted && feedbackForm.controls['category'].errors" class="help-block">
+            <div *ngIf="feedbackForm.controls['category'].errors['required']" style="color:red">Category is required.</div>
+          </div>
+        </div>
+        <div class="form-group" [ngClass]="{ 'has-error': submitted && feedbackForm.controls['review'].errors }">
+          <label for="review">Review</label>
+          <textarea type="number"  [(ngModel)]="User.Review"  cols=30 rows="5" class="form-control" formControlName="review" placeholder="Write your review (round numbers)" required ></textarea>
+          <div *ngIf="submitted && feedbackForm.controls['review'].errors" class="help-block">
+            <div *ngIf="feedbackForm.controls['review'].errors['required']" style="color:red">Review is required.</div>
+            <div *ngIf="feedbackForm.controls['review'].errors['min']" style="color:red">Review must be a positive number.</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Ratings</label>
+          <div class="ratings-container">
+            <span class="rating-btn" [class.selected]="User.Ratings === 1" (click)="setRating(1)">1</span>
+            <span class="rating-btn" [class.selected]="User.Ratings === 2" (click)="setRating(2)">2</span>
+            <span class="rating-btn" [class.selected]="User.Ratings === 3" (click)="setRating(3)">3</span>
+            <span class="rating-btn" [class.selected]="User.Ratings === 4" (click)="setRating(4)">4</span>
+            <span class="rating-btn" [class.selected]="User.Ratings === 5" (click)="setRating(5)">5</span>
+          </div>
+          <div class="selected-rating" *ngIf="ratings">
+            You selected: {{ ratings }} stars
+          </div>
+        </div>
+        <div class="form-group text-center">
+          <button class="btn btn-primary" type="submit" (click)="Insert1()" [disabled]="submitted && feedbackForm.invalid">Submit</button>
+          <div class="alert alert-success my-2" *ngIf="!(SuccessMsg =='')">{{SuccessMsg}}</div>
+          <div class="alert alert-danger my-2" *ngIf="!(ErrorMsg =='')">{{ErrorMsg}}</div>
+          <input type="submit" value="delete" class="btn btn-danger my-3" type="reset" (click)="Delete()">&nbsp;
+          <div class="alert alert-success my-3" *ngIf="!(deletedMsg =='')">{{deletedMsg}}</div>
+          <input type="submit" value="update" class="btn btn-success my-3" (click)="Update()">
+          <div class="alert alert-success my-3" *ngIf="!(updatedMsg =='')">{{updatedMsg}}</div>&nbsp;
+          <input type="reset" value="reset" class="btn btn-success my-3">
+        </div>
+      </form>
+    </div>
+  </div>
+  </body> -->
