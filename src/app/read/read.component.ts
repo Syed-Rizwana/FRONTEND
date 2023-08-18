@@ -16,13 +16,13 @@ import { NgForm } from '@angular/forms';
 })
 export class ReadComponent implements OnInit, OnDestroy {
   constructor(private Service: Share1Service) { }
-  ngOnInit():void { }
+  ngOnInit(): void { }
   Subscription: Subscription = new Subscription();
   User: Share1 = {
-    title:'',
+    title: '',
     name: '',
     email: '',
-    yourstory:''
+    yourstory: ''
   };
   SuccessMsg = '';
   ErrorMsg = '';
@@ -31,10 +31,8 @@ export class ReadComponent implements OnInit, OnDestroy {
     this.ErrorMsg = '';
     this.SuccessMsg = '';
     this.Subscription = this.Service.Read(this.User.email).subscribe(
-      (data:any) => {
+      (data: any) => {
         if (data) {
-          // alert("read Successfully")
-          // document.write("Read Successfully");
           console.log(data);
           console.log(data.Result);;
           this.a = data.Result[0];
@@ -47,7 +45,7 @@ export class ReadComponent implements OnInit, OnDestroy {
         }
       }
     );
-}
+  }
 
   ngOnDestroy() {
     this.Subscription.unsubscribe();

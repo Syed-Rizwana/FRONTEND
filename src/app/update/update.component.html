@@ -1,46 +1,11 @@
-<!-- <div class="form-group">
-    <br>
-    <form #r="ngForm">
-        <table align="center" cellpadding="10">
-            <tr>
-                <td><p>Title</p></td>
-                <td><input type="text" id="name" name="title" id="a" placeholder="Enter your Title" [(ngModel)]="User.title" >
-                </td>
-            </tr>
-            <tr>
-                <td><p>Name</p></td>
-                <td><input type="text" id="name" name="name" id="a" placeholder="Enter your Name" [(ngModel)]="User.name">
-                </td>
-            </tr>
-            <tr>
-                <td><p>email</p></td>
-                <td><input type="email" id="name" name="email" id="a"  placeholder="Enter your Email" [(ngModel)]="User.email">
-                </td>
-            </tr>
-            <tr>
-              <td><p>your story</p></td>
-              <td><textarea name="yourstory" placeholder="Enter your Story" rows=10 cols=100 id="name1" [(ngModel)]="User.yourstory"></textarea>
-              </td>
-          </tr>
-            <tr>
-
-            <td align="center" colspan="1"><button type="submit" class="btn btn-primary" (click)="Update()">Update</button></td>
-            <td align="center" colspan="1"><button type="submit" class="btn btn-primary" (click)="Delete()">Delete</button></td>
-                
-            </tr>
-          
-           
-        </table>
-        </form>
-</div> -->
 <div class="b">
-<div class="form-container">
+  <div class="form-container">
     <form #r="ngForm">
       <div class="form-group">
         <label for="title">Title:</label>
         <input type="text" id="title" [(ngModel)]="User.title" name="title" required>
       </div>
-     
+
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" id="name" [(ngModel)]="User.name" name="name" required>
@@ -50,31 +15,17 @@
         <input type="text" id="email" [(ngModel)]="User.email" name="email" required>
         <div *ngIf="r.controls['email']?.['touched'] && r.controls['email']?.['errors']" class="red">
           <div *ngIf="r.controls['email']?.['errors']?.['required']">
-              Enter your Email
+            Enter your Email
           </div>
+        </div>
       </div>
-      </div>
-      
+
       <div class="form-group">
         <label for="yourstory">Content:</label>
         <textarea id="yourstory" [(ngModel)]="User.yourstory" name="yourstory" cols="10" rows="10" required></textarea>
       </div>
-      
+
       <button (click)="Update()" class="a">Update Story</button>
       <button (click)="Delete()" class="btn btn-primary">Delete</button>
     </form>
   </div>
-  
-  
-  <!-- <div class="message-container">
-    <div class="message">
-      <h2>Update or Delete Your Story</h2>
-      <p>Life is a book with endless chapters. Edit your narrative with courage, for every update brings growth. Embrace the power to delete what no longer aligns with your purpose and let new beginnings unfold.</p>
-      
-    </div>
-  </div>
-</div>
-  
-   -->
-  
-  

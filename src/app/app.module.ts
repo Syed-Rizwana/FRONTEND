@@ -16,9 +16,9 @@ import { Womenmurders1Component } from './womenmurders1/womenmurders1.component'
     Share1Component,
     ReadComponent,
     UpdateComponent,
-   
+
     Womenmurders1Component,
-    
+
   ],
   imports: [
     BrowserModule,

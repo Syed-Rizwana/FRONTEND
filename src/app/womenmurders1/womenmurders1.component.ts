@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms'; // Add this line
+import { FormsModule } from '@angular/forms'; 
 import { NgModule } from '@angular/core';
 
 @Component({
@@ -10,7 +10,7 @@ import { NgModule } from '@angular/core';
 })
  export class Womenmurders1Component {
   currentIndex = 0;
-  totalStories = 3; // Update this value with the actual total number of stories
+  totalStories = 3; 
 
   previousStory() {
     this.currentIndex--;

@@ -1,22 +1,9 @@
-/* .container {
-    display: flex;
-    align-items: flex-start;
-  }
-  
-  .img1 {
-    width:300px;
-    height:auto;
-  }
-  
-  .table-container {
-    margin-left:1000px;
-  }
-   */
-  .f{
-    font-size: 30px;
-    color:rgb(18, 96, 138);
-   }
-   p{
-    font-size: 30px;
-    color:rgb(206, 83, 35);
-   }
+.f {
+  font-size: 30px;
+  color: rgb(18, 96, 138);
+}
+
+p {
+  font-size: 30px;
+  color: rgb(206, 83, 35);
+}

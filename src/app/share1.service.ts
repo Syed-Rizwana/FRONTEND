@@ -36,12 +36,7 @@ export class Share1Service {
       `${this.url}share/Delete${catg}`
     );
   }
-  // Read(catg:String): Observable<Read> {
-  //     console.log(`${this.url}DA/Read${catg}`);
-  //   return this.http.get<Read>(
-  //     `${this.url}DA/Read${catg}`
-  //   );
-  // }
+  
   Read(catg: String): Observable<InsertedSuccess> {
     console.log(`${this.url}share/Read${catg}`);
     return this.http.get<InsertedSuccess>(
