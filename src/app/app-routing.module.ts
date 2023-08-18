@@ -4,7 +4,7 @@ import { Womenmurders1Component } from './womenmurders1/womenmurders1.component'
 import { Share1Component } from './share1/share1.component';
 import { UpdateComponent } from './update/update.component';
 import { ReadComponent } from './read/read.component';
-import { DeleteComponent } from './delete/delete.component';
+
 import { FormsModule } from '@angular/forms';
 const routes: Routes = [
   {
